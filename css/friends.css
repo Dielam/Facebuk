@@ -1,0 +1,51 @@
+form{
+    display: flex;
+    align-items: center;
+}
+.friend_avatar{
+	margin-right: 10px;
+}
+
+.btn_secondary{
+	margin-left: 10px;
+}
+
+.friend_item{
+    width: 48%;
+    display: inline-flex;
+}
+
+.friend_name{
+    overflow: hidden;
+}
+
+.friends-wrapper {
+    display: flex;
+}
+
+#friendship_request_list {
+    margin: 0;
+}
+
+#friendship_request_list li {
+    margin: 16px 0;
+}
+
+.friend-subtitle {
+    font-size: 18px;
+    color: white;
+    margin-top: 0;
+}
+
+.friends-container {
+    margin-left: 24px;
+}
+
+.friends-wrapper .btn_logout {
+    display: flex;
+    margin-top: 16px;
+}
+.add-user-container {
+    width: 60%;
+    margin: 0 auto;
+}

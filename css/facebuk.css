@@ -1,0 +1,245 @@
+/* GENERAL TAGS STARTS */
+html{
+    background-color: #FFFDF9;
+}
+ul{
+    padding-inline-start: 0;
+    list-style-type: none; 
+}
+li{
+    display: flex;
+    align-items: center;
+}
+body{
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+form{
+    width: 100%;
+    text-align: center;
+}
+label{
+    display: block;
+    color: white;
+}
+p{
+    margin: 0 0 10px 0;
+}
+
+h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-top: 2.5rem;
+}
+/* GENERAL TAGS ENDS */
+
+/* PAGE CONTENT STARTS */
+.page_container{
+    margin-top: 140px;
+}
+.question_title{
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.centered{
+    display: flex;
+    justify-content: center;
+    color: #000;
+
+}
+.right{
+    display: flex;
+    margin-left: auto;
+}
+.friends-wrapper {
+    width: 70%;
+    margin: auto;
+}
+.content_wrapper{
+    padding: 20px;
+    background-color: #FE2E2E;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.friends_search .left{
+    margin-left: 1rem;
+}
+#user_searcher {
+    margin: 8px 0 0 0;
+}
+.content_wrapper--centered{
+    align-items: center;
+}
+.content_wrapper--small {
+    width: 50%
+}
+.friends_search{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.input_primary{
+    width: 95%;
+    padding: 0.75rem 0.5rem ;
+    background-color: white;
+    border: none;
+    margin: 10px auto; 
+}
+.login label {
+    margin-top: 1rem;
+    width: 70%;
+    text-align: left;
+}
+.input_upload {
+    margin-top: 1.5rem;
+    display: flex;
+}
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.login_paragraph {
+    margin-top: 1rem;
+    text-align: left;
+}
+.login_sex {
+    display: grid;
+    flex-direction: column;
+}
+.login_avatar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.login_avatar .radio_label {
+    display: flex;
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+.login_avatar img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.login label:first-of-type {
+    margin-top: 0;
+}
+.radio_input{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.radio_label{
+    display: inline;
+}
+.error_Msg{
+    color: #ff010e;
+    margin: 10px 0;
+    display:flex;
+    align-items: center;
+}
+.link{
+    color: white;
+    text-decoration-line: none;
+    padding: 10px;
+}
+.link_secondary{
+    color: black;
+    text-decoration-line: none;
+    padding: 10px;
+}
+
+/* BUTTONS STARTS */
+.button_container{
+    display: flex;
+}
+.btn_primary{
+    color: white;
+    background-color: #9e0303;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border: 2px solid transparent;
+    display: flex;
+    margin: 15px auto 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn_primary:hover, a.btn_primary:hover{
+    font-weight: normal;
+}
+.add {
+    border-radius: 50%;
+    height: 25px;
+    width: 13px;
+    margin-left: auto;
+}
+.btn:hover{
+    background-color: white;
+    color: #9e0303;
+    border: 2px solid #9e0303;
+}
+.btn_secondary{
+    color: white;
+    background-color: black;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border: 2px solid transparent;
+    display: flex;
+    margin: 15px auto 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn_logout{
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn_logout:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.btn_centered{
+    margin: 0 auto;
+}
+.btn_right{
+    margin-left: auto;
+    margin-right: 20px;
+}
+.btn_menu{
+    border: 1px solid #9e0303;
+    color: white;
+    background-color: #9e0303;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border: 2px solid transparent;
+    display: flex;
+    margin: 15px auto 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* BUTTONS ENDS */
+.avatar_form{
+    width: 100px;
+}
+
+/* PAGE CONTENT ENDS */
+#modifyStatusForm small{
+    display: flex;
+    color: white;
+    text-align: left;
+    margin: 8px 0;
+}
+
+#modifyStatusForm .input_primary {
+    width: calc(100% - 16px);
+}

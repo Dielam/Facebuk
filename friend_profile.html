@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Perfil de amigo</title>
+
+		<link rel="icon" type="image/ico" href="img/u.ico">
+		<link rel="stylesheet" type="text/css" href="css/header.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/facebuk.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/profile.css" media="screen">
+
+		<script src="js/vendor/modernizr.js"></script>
+	</head>
+	<body>
+		<!--Header-->
+        <div class="header">
+            <div class="page_title">
+                <img src="img/title.png" height="100"/>
+			</div>
+			<div class="general_panel">
+				<div class="pushbutton_panel">
+					<a id="profile" class="link" href="/profile.html"> Perfil</a>
+					<a id="friends" class="link" href="/friends.html"> Amigos</a>
+					<a id="comments" class="link" href="/comments.html"> Comentarios</a>
+					<button id="logout" class="btn_logout"> Cerrar sesión</button>
+				</div>
+			</div>
+        </div>
+		<!--Page Container-->
+		<div class="page_container">
+			<div class="profile_container">
+				<div class="profile_img">
+					<img src="userImage" id="avatar" height="150" width="150">
+				</div>
+				<div class="profile_data">
+					<span class="profile_data--name" id="data_name"></span>
+					<span class="profile_data--other" id="data_age"></span>
+					<span class="profile_data--other" id="data_gender"></span>
+                    <span class="profile_data--other" id="data_status"></span>
+                    <input class="user_email" hidden>
+				</div>
+			</div>
+
+            <div class="button_container">
+				<form id="deleteFriendForm">
+					<input id="delete_friend" type="submit" class="btn btn_menu btn_centered" value="Eliminar amigo"/>
+				</form>
+            </div>
+            <div class="button_container" id="comments_friend">
+            </div>
+		</div> 
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/cognito-auth.js"></script>
+		<script src="js/friend-profile.js"></script>
+        <script src="js/comments-friend.js"></script>
+        <script src="js/delete-friend.js"></script>
+	</body>
+</html>	
+	

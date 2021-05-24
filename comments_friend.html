@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Comentarios</title>
+
+        <link rel="icon" type="image/ico" href="img/u.ico">
+        <link rel="stylesheet" type="text/css" href="css/header.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/facebuk.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/login_register.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/comments.css" media="screen">
+        <script src="js/vendor/modernizr.js"></script>
+    </head>
+    <body>
+        <!--Header-->
+        <div class="header">
+            <div class="page_title">
+                <img src="img/title.png" height="100"/>
+            </div>
+            <div class="general_panel">
+				<div class="pushbutton_panel">
+					<a id="profile" class="link" href="/profile.html"> Perfil</a>
+					<a id="friends" class="link" href="/friends.html"> Amigos</a>
+					<a id="comments" class="link" href="/comments.html"> Comentarios</a>
+                    <button id="logout" class="btn_logout"> Cerrar sesión</button>
+				</div>
+			</div>
+        </div>
+        <!--Page Container-->
+        <div class="page_container comment-page">
+            <div class="button_container" id="add_comment">
+            </div>
+            <h1 class="centered">Comentarios</h1>
+            <div class="content_wrapper">
+                    <ul id="comment_list">
+                    </ul>
+                </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/cognito-auth.js"></script>
+        <script src="js/comments-friend.js"></script>
+    </body>
+</html>

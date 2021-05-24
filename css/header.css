@@ -1,0 +1,50 @@
+/* HEADER SECTION STARTS */
+.header{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    background-color: #FE2E2E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 1rem;
+    width: calc(100% - 32px);
+    height: 72px;
+    align-items: center;
+    z-index: 99999; 
+}
+
+.page_title{
+    display: flex;
+}
+.pushbutton_panel{ 
+    font-size: 20px;
+}
+.pushbutton_panel a:hover{
+    font-weight:bold;
+}
+.info_panel{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+.general_panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info_panel--avatar{
+    margin-right: 15px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.info_panel--points{
+    align-self: center;
+    color: white;
+    font-size: 18px;
+    width: 85px;
+}
+   
+    
+/* HEADER SECTION ENDS */

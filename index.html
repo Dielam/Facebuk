@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Facebuk</title>
+
+        <link rel="icon" href="img/u.ico">
+        <link rel="stylesheet" href="css/header.css" media="screen">
+        <link rel="stylesheet" href="css/facebuk.css" media="screen">
+        <link rel="stylesheet" href="css/login_register.css" media="screen">
+
+        <script src="js/vendor/modernizr.js"></script>
+    </head>
+    <body>
+        <!--Header-->
+        <div class="header">
+            <div class="page_title">
+                <img src="img/title.png" height="100"/>
+            </div>
+        </div>
+        <!--Page Container-->
+        <div class="page_container">
+            <div class="login">
+                <h1 class="login-title">Iniciar sesión</h1>
+                <form id="signinForm">
+                    <label for="email_input">Dirección de correo</label>
+                    <input id="email_input" class="input_primary" type="email" placeholder="Dirección de Correo" name="email" required/>
+                    <label for="password_input">Contraseña</label>
+                    <input id="password_input" class="input_primary" type="password" placeholder="Contraseña" name="password" required/>
+                    <input id="btn_ok" type="submit" class="btn_ok" value="Aceptar"/>
+                </form>
+            </div>
+            <div class = "login">
+                ¿No tienes cuenta?
+                <a class="btn_ok" href="/register.html">Regístrate</a>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/cognito-auth.js"></script>
+    </body>
+</html>

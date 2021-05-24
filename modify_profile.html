@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Modificar Perfil</title>
+        
+        <link rel="icon" type="image/ico" href="img/u.ico">
+        <link rel="stylesheet" type="text/css" href="css/header.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/facebuk.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/login_register.css" media="screen">
+
+        <script src="js/vendor/modernizr.js"></script>
+    </head>
+    <body>
+        <!--Header-->
+        <div class="header">
+            <div class="page_title">
+                <img src="img/title.png" height="100"/>
+            </div>
+            <div class="general_panel">
+				<div class="pushbutton_panel">
+					<a id="profile" class="link" href="/profile.html"> Perfil</a>
+					<a id="friends" class="link" href="/friends.html"> Amigos</a>
+					<a id="comments" class="link" href="/comments.html"> Comentarios</a>
+                    <button id="logout" class="btn_logout"> Cerrar sesión</button>
+				</div>
+			</div>
+        </div>
+        <!--Page Container-->
+        <div class="page_container">
+            <div class="login new-user">
+                <form id="modifyProfileForm">
+                    <label for="name_input">Nombre completo</label>
+                    <input id="name_input" type="text" class="input_primary" placeholder="Nombre completo" name="name" required/>
+                    <p class="login_paragraph">Sexo</p>
+                    <div class="login_sex">
+                        <label class="radio_label" for="gender_input--male"> <input id="gender_input--male" class="radio_input" type="radio" name="gender" value="Masculino" checked/>Masculino</label>
+                        <label class="radio_label" for="gender_input--female"> <input id="gender_input--female" class="radio_input" type="radio" name="gender" value="Femenino"/>Femenino</label>
+                        <label class="radio_label" for="gender_input--other"><input id="gender_input--other" class="radio_input" type="radio" name="gender" value="Otro"/>Otro</label>
+                    </div>
+                    <label for="date_input">Fecha nacimiento</label>
+                    <input id="date_input" type="date" class="input_primary" placeholder="Fecha de nacimiento" name="date" max="<%= maxDate %>"/>
+                    <p class="login_paragraph">Avatar</p>
+                    <div class="login_avatar">
+                        <label class="radio_label" for="avatar_1"> <input id="avatar_1" class="radio_input" type="radio" name="avatar" value="img/avatars/Luffy.jpg"/><img src="img/avatars/Luffy.jpg" class="avatar_form"></label>
+                        <label class="radio_label" for="avatar_2"><input id="avatar_2" class="radio_input" type="radio" name="avatar" value="img/avatars/Ace.png"/><img src="img/avatars/Ace.png" class="avatar_form"></label>
+                        <label class="radio_label" for="avatar_3"> <input id="avatar_3" class="radio_input" type="radio" name="avatar" value="img/avatars/Sabo.jpg" checked/><img src ="img/avatars/Sabo.jpg" class="avatar_form"></label>
+                        <label class="radio_label" for="avatar_4"> <input id="avatar_4" class="radio_input" type="radio" name="avatar" value="img/avatars/Nami.jpg" checked/><img src ="img/avatars/Nami.jpg" class="avatar_form"></label>
+                        <label class="radio_label" for="avatar_5"> <input id="avatar_5" class="radio_input" type="radio" name="avatar" value="img/avatars/NicoRobin.jpg" checked/><img src ="img/avatars/NicoRobin.jpg" class="avatar_form"></label>
+                        <label class="radio_label" for="avatar_6"> <input id="avatar_6" class="radio_input" type="radio" name="avatar" value="img/avatars/hancock-boa-975.jpg" checked/><img src ="img/avatars/hancock-boa-975.jpg" class="avatar_form"></label>
+                        <label class="radio_label" for="avatar_7"> <input id="avatar_7" class="radio_input" type="radio" name="avatar" value="img/avatars/emporio-ivankov-5456.jpg" checked/><img src ="img/avatars/emporio-ivankov-5456.jpg" class="avatar_form"></label>
+                        <label class="radio_label" for="avatar_8"> <input id="avatar_8" class="radio_input" type="radio" name="avatar" value="img/avatars/Noprofile.jpg" checked/><img src ="img/avatars/Noprofile.jpg" class="avatar_form"></label>
+                    </div>
+                    <input id="btn_ok" type="submit" class="btn_ok btn-new-user" value="Modificar usuario"/>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/cognito-auth.js"></script>
+        <script src="js/modify-profile.js"></script>
+    </body>
+</html>

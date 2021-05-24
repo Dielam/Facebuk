@@ -1,0 +1,62 @@
+.profile_container{
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto 8px auto;
+}
+#addFriend{
+	display: none;
+}
+.profile_data{
+	margin-left: 5%;
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+}
+.profile_data .profile_data--name{
+	font-size: 26px;
+	margin-bottom: 15px;
+}
+
+.profile-btn-container, .more {
+	display: flex;
+	width: 60%;
+	margin: 0 auto;
+}
+.profile-btn-container {
+	margin-bottom: 32px;
+}
+.more-btn {
+	color: white;
+	text-decoration: none;
+	margin-top: 8px;
+}
+.more {
+	box-sizing: border-box;
+	padding: 24px;
+	flex-direction: column;
+	background-color: #FE2E2E;
+}
+.more h2 {
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 8px;
+	color: white;
+	text-align: left;
+}
+.profile_data .profile_data--name.btn_primary {
+	margin: 0 0 0 32px;
+    padding: 8px;
+    font-size: 16px;
+    height: 20px;
+}
+.profile-name-container {
+	display: flex;
+	justify-content: space-between;
+}
+.profile-btn-container .btn_centered {
+	margin: 8px auto 8px 0;
+}
+.profile-btn-container .btn_primary {
+	margin-right: 16px;
+}

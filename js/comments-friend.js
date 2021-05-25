@@ -37,7 +37,7 @@ var Facebuk = window.Facebuk || {};
         $("#add_comment").append(link);
 
         if(result.Users == "EMPTY"){
-            var html = '<h2>No tienes comentarios</h2>';
+            var html = '<h2>No hay comentarios para mostrar</h2>';
             $("#comment_list").append(html);
         }
         else{

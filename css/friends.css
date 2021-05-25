@@ -24,6 +24,10 @@ form{
     grid-template-columns: 30% 70%;
 }
 
+.friend-requests-wrapper {
+    display: flex;
+}
+
 #friendship_request_list {
     margin: 0;
 }

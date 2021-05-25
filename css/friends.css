@@ -20,7 +20,8 @@ form{
 }
 
 .friends-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 70%;
 }
 
 #friendship_request_list {
